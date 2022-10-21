@@ -1,3 +1,8 @@
+@extends('layouts.navbarMenu')
+
+@section('title', 'clasificacion')
+@section('main-title', 'Creacion de clasificacion')
+@section('navbar-menu') 
   <form method="get" action="" class="row g-3 needs-validation" novalidate>
     <input type="hidden" value="1" name="opcion">
 
@@ -20,3 +25,4 @@
         <button type="submit" class=" btn btn-primary w-100 fs-5">Registrar</button>
       </div>
   </form>
+  @endsection

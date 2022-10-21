@@ -1,7 +1,8 @@
-<?php
-if (!isset($_REQUEST['editar'])  and !isset($_REQUEST['borrar'])) {
-?>
+@extends('layouts.navbarMenu')
 
+@section('title', 'Usuario')
+@section('main-title', 'Creacion de usuario')
+@section('navbar-menu')
   <form method="get" action="" class="row g-3 needs-validation" novalidate>
     <input type="hidden" value="1" name="opcion">
 
@@ -94,6 +95,4 @@ if (!isset($_REQUEST['editar'])  and !isset($_REQUEST['borrar'])) {
         <button type="submit" class=" btn btn-primary w-100 fs-5">Registrar</button>
       </div>
   </form>
-<?php
-}
-?>
+@endsection
